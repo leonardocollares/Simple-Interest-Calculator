@@ -8,6 +8,12 @@ slider.oninput = function () {
 
 function compute() {
     amount = parseInt(document.getElementById("principal").value);
+
+    if (amount <= 0) {
+        alert("Enter a positive number.");
+        return;
+    }
+
     interestRate = parseFloat(document.getElementById("rate").value);
     numYears = parseInt(document.getElementById("years").value);
     dt = new Date();
