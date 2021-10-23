@@ -36,3 +36,9 @@ function compute() {
         interestRate + "%</span>.<br /> You will receive an amount of <span class='yellow'>" +
         result + "</span>,<br /> in the year <span class='yellow'>" + (dtYear + numYears) + "</span>";
 }
+
+// Clear form for new search
+function clearOptions() {
+    document.getElementById("years").value = "1";
+    document.getElementById("result").textContent = "";
+}
