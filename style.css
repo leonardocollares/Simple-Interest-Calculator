@@ -31,5 +31,7 @@ h1{
     width: 120px;
     font-size: smaller;
 }
-
+.yellow {
+    background-color: yellow;
+}
 
